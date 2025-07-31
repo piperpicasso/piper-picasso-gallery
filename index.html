@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piper Picasso Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <div class="title-container">
+                        <img src="images/logo.png" alt="Piper Picasso Logo" class="header-logo">
+                        <div class="title-text">
+                            <h1 class="title">Piper Picasso Gallery</h1>
+                            <p class="subtitle">Discover the artistic vision of Piper Picasso</p>
+                        </div>
+                    </div>
+                </div>
+                <nav class="nav-tabs">
+                    <button class="nav-tab active" data-section="about">About</button>
+                    <button class="nav-tab" data-section="gallery">Gallery</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section id="about" class="about-section">
+                <div class="about-content">
+                    <div class="video-container">
+                        <div class="tiktok-video" id="tiktokVideo">
+                            <iframe 
+                                src="https://www.tiktok.com/embed/7532345216259345694"
+                                width="100%" 
+                                height="600" 
+                                frameborder="0" 
+                                allowfullscreen
+                                allow="autoplay; encrypted-media"
+                                style="border-radius: 15px;">
+                            </iframe>
+                        </div>
+                        <a href="https://www.tiktok.com/@the_campbell/video/7532345216259345694" target="_blank" class="video-link">
+                            <span>View on TikTok</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15,3 21,3 21,9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="about-text">
+                        <h2>About Piper Picasso</h2>
+                        <p>Piper is a beloved dog who became an extraordinary canvas for artistic expression. Each piece in this collection transforms Piper's natural form into stunning original Picasso paintings, creating a unique fusion of canine charm and cubist brilliance.</p>
+                        <p>This innovative approach to art sees Piper's playful personality and distinctive features reimagined through Picasso's iconic style - with bold geometric shapes, vibrant colors, and abstract forms that capture both the essence of the original master and the spirit of a beloved pet.</p>
+                        <p>The gallery showcases 170 unique original Picasso paintings of Piper, each one a testament to the creative vision of transforming a dog into a living, breathing work of art. From cubist interpretations to abstract expressions, every piece celebrates the intersection of animal companionship and artistic genius.</p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <span class="stat-number">170</span>
+                                <span class="stat-label">Picasso Paintings</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">1</span>
+                                <span class="stat-label">Amazing Dog</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="gallery" class="gallery-section">
+                <div class="gallery-controls">
+                    <h2>Gallery Collection</h2>
+                    <div class="controls">
+                        <button id="prevBtn" class="control-btn">← Previous</button>
+                        <button id="nextBtn" class="control-btn">Next →</button>
+                    </div>
+                </div>
+                
+                <div class="gallery-container">
+                    <div class="gallery-grid" id="galleryGrid">
+                        <!-- Images will be dynamically added here -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Piper Picasso Gallery. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
